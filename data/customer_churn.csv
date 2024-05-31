@@ -1,0 +1,19 @@
+data = {
+    'CustomerID': range(1, 11),
+    'CreditScore': [600, 850, 700, 640, 590, 720, 750, 630, 680, 690],
+    'Geography': ['France', 'Spain', 'France', 'Germany', 'France', 'Spain', 'Germany', 'Germany', 'Spain', 'France'],
+    'Gender': ['Female', 'Male', 'Female', 'Male', 'Female', 'Male', 'Female', 'Female', 'Male', 'Male'],
+    'Age': [40, 50, 30, 35, 42, 28, 33, 45, 38, 41],
+    'Tenure': [3, 5, 2, 3, 6, 1, 4, 5, 2, 4],
+    'Balance': [60000, 80000, 70000, 64000, 59000, 72000, 75000, 63000, 68000, 69000],
+    'NumOfProducts': [2, 1, 1, 2, 1, 2, 1, 2, 1, 2],
+    'HasCrCard': [1, 1, 0, 1, 0, 1, 0, 1, 1, 1],
+    'IsActiveMember': [1, 1, 0, 0, 1, 1, 0, 1, 1, 0],
+    'EstimatedSalary': [50000, 70000, 60000, 52000, 59000, 58000, 60000, 61000, 57000, 55000],
+    'Exited': [1, 0, 0, 1, 1, 0, 0, 1, 0, 1]
+}
+
+df_customer_churn = pd.DataFrame(data)
+df_customer_churn.to_csv('/mnt/data/customer_churn.csv', index=False)
+
+df_customer_churn.to_csv('/mnt/data/customer_churn.csv', index=False)
